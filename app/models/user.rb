@@ -6,6 +6,6 @@ class User < ApplicationRecord
 
   has_many :books, dependent: :destroy
 
-  validates :username, presence: true, uniqueness: true
+  validates :name, presence: true, uniqueness: true
 
 end
