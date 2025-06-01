@@ -1,7 +1,9 @@
 <h2>User info</h2> 
 <%= image_tag user.get_profile_image(100,100) %>
 <%= user.name %>
+<p>name</p>
 <%= user.introduction %>
+<p>introduction</p>
 <% if user == current_user %>
   <p><%= link_to "<i class='fa-solid fa-user-gear'></i>".html_safe, edit_user_path(user) , class: "btn btn-outline-secondary btn-block "%></p>
 <% end %>
